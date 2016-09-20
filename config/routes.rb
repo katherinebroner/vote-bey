@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   get 'about' => 'application#about'
   get 'issues' => 'application#issues'
-  get 'giving-back' => 'application#giving-back'
+  get 'giving-back' => 'application#giving'
   get 'connect' => 'application#connect'
 end
