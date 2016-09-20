@@ -14,3 +14,9 @@
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "index";
+@import "layouts";
+
+body {
+  position: relative;
+}
