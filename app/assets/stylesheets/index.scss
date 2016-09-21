@@ -2,12 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.navbar {
+  background: rgba(255, 255, 255, 0.6);
+}
 
-.intro {
+
+.intro-content {
   padding-top: 100px;
-  border: 2px solid black;
-  height: 750px;
+  height: 825px;
+  background-image: image-url("white-house.jpeg");
+  background-size: cover !important;
+  background-position: top;
+  background-attachment: fixed;
+}
 
+.intro-text {
+  height: 200px;
+  text-align: center;
+  font-size: 6vw;
+  color: white;
 }
 
 .content-section{
