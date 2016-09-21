@@ -9,14 +9,18 @@
 
 .intro-content {
   padding-top: 100px;
-  border: 2px solid black;
   height: 825px;
   background-image: image-url("white-house.jpeg");
   background-size: cover !important;
   background-position: top;
   background-attachment: fixed;
-  // margin-top: -60px;
+}
 
+.intro-text {
+  height: 200px;
+  text-align: center;
+  font-size: 90px;
+  color: white;
 }
 
 .content-section{
