@@ -4,4 +4,16 @@ class ApplicationController < ActionController::Base
   def index
     # @user = $client.user("katherinebroner")
   end
+
+  def about
+  end
+
+  def issues
+  end
+
+  def giving
+  end
+
+  def connect
+  end
 end
