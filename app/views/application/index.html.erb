@@ -71,8 +71,10 @@
           <h2 class="section-title">Connect</h2>
           <p>This will have the recent tweets and contact info</p>
           <div class="tweets-container">
-          <%= @tweets.each do |tweet| %>
-            <div class="single-tweet col-xs-4"><%= "#{tweet.text}"%></div>
+          <% @tweets.each do |tweet| %>
+          <div class="single-tweet panel panel-default col-xs-4">
+            <div class="panel-body"><%= "#{tweet.text}"%></div>
+          </div>
 
           <% end %>
           </div>

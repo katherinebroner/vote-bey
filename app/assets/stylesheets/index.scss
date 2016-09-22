@@ -33,7 +33,7 @@
   color: rgb(63, 129, 166);
   text-align: center;
   text-decoration: bold;
-  font-size: 2em;
+  font-size: 5em;
 }
 
 .tweets-container {
@@ -42,13 +42,11 @@
 }
 
 .single-tweet {
-  border: 2px solid black;
   height: 100px;
-  margin-bottom: 15px;
-  margin-right: 15px;
   width: 350px;
+  margin-right: 15px;
   text-align: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  font-size: 1.1em;
+  background-color: rgba(131, 170, 194, 0.6);
+  border-color: black;
+
 }
