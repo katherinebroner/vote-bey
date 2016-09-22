@@ -69,7 +69,7 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="section-title">Connect</h2>
-          <p>This will have the recent tweets and contact info</p>
+          <p class="tweet-description">@recent_tweets from Beyonce</p>
           <div class="tweets-container">
           <% @tweets.each do |tweet| %>
           <div class="single-tweet panel panel-default col-xs-4">
@@ -79,8 +79,13 @@
           <% end %>
           </div>
 
+
         </div>
       </div>
+      <div class="email-content">
+          <p>Want to get involved?  Email us!</p>
+          <a class="email btn btn-primary btn-lg" href="mailto:votebey.com" role="button">votebey.com</a>
+        </div>
     </section>
   </body>
 </html>
