@@ -38,7 +38,7 @@
     <section id="about" class="container content-section">
       <div class="row">
         <div class="col-md-12">
-          <h2>About</h2>
+          <h2 class="section-title">About</h2>
           <p>This is the content about Beyonce's upbringing</p>
         </div>
       </div>
@@ -48,7 +48,7 @@
     <section id="issues" class="container content-section">
       <div class="row">
         <div class="col-md-12">
-          <h2>Issues</h2>
+          <h2 class="section-title">Issues</h2>
           <p>These are the main issues Beyonce stands behind</p>
         </div>
       </div>
@@ -58,7 +58,7 @@
     <section id="giving-back" class="container content-section">
       <div class="row">
         <div class="col-md-12">
-          <h2>Giving Back</h2>
+          <h2 class="section-title">Giving Back</h2>
           <p>These are the charities Beyonce Works With</p>
         </div>
       </div>
@@ -68,10 +68,24 @@
     <section id="connect" class="container content-section">
       <div class="row">
         <div class="col-md-12">
-          <h2>Connect</h2>
-          <p>This will have the recent tweets and contact info</p>
+          <h2 class="section-title">Connect</h2>
+          <p class="tweet-description">@recent_tweets from Beyonce</p>
+          <div class="tweets-container">
+          <% @tweets.each do |tweet| %>
+          <div class="single-tweet panel panel-default col-xs-4">
+            <div class="panel-body"><%= "#{tweet.text}"%></div>
+          </div>
+
+          <% end %>
+          </div>
+
+
         </div>
       </div>
+      <div class="email-content">
+          <p>Want to get involved?  Email us!</p>
+          <a class="email btn btn-primary btn-lg" href="mailto:votebey.com" role="button">votebey.com</a>
+        </div>
     </section>
   </body>
 </html>
