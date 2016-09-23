@@ -10,10 +10,13 @@ $(function() {
 
 $(document).ready(function(){
   $(".single-img").mouseover(function(){
+    // debugger;
     $(this).css('opacity', 0.2);
+    $(this).children('p').removeClass("hidden");
   });
   $(".single-img").mouseleave(function(){
     $(this).css('opacity', '');
+    $(this).children('p').addClass("hidden");
   });
 });
 

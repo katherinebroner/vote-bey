@@ -36,6 +36,10 @@
   font-size: 5em;
 }
 
+#giving-title {
+  color: rgb(202, 55, 52);
+}
+
 .tweet-description {
   text-align: center;
   font-size: 2em;
@@ -88,6 +92,10 @@
   margin-top: 4%;
 }
 
+.single-image {
+  position: relative;
+}
+
 .MFR {
   padding-left: 0%;
   width: 400px;
@@ -111,4 +119,12 @@
 
 #global {
   margin-left: 4%;
+}
+
+.img-text {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
 }
