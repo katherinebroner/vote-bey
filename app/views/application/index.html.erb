@@ -77,7 +77,7 @@
           <div class="tweets-container">
           <% @tweets.each do |tweet| %>
           <div class="single-tweet panel panel-default col-xs-4">
-            <div class="panel-body"><%= "#{tweet.text}"%></div>
+            <a href="<%= tweet[:url] %>" target="_blank" class="panel-body"><%= tweet[:text]%></a>
           </div>
 
           <% end %>

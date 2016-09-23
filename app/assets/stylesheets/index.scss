@@ -53,9 +53,17 @@
   width: 350px;
   margin-right: 15px;
   text-align: center;
-  background-color: rgba(131, 170, 194, 0.6);
+  background-color: rgba(131, 170, 194, 0.5);
   border-color: black;
 
+}
+
+.single-tweet a {
+  color: black;
+}
+
+.single-tweet a:hover {
+  color: rgb(63, 129, 166);
 }
 
 .email-content {
