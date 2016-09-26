@@ -144,24 +144,21 @@
 }
 
 .about-img {
-  border: 2px solid red;
   text-align: center;
 }
 
 .about-text {
-  border: 2px solid blue;
   font-size: 2em;
   height: 386px;
 }
 
 .about-content {
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .social-media {
   margin: auto;
   text-align: center;
-  border: 2px solid black;
 }
 
 .social-media ul {
@@ -170,4 +167,15 @@
 
 .social-media li {
   font-size: 2em;
+  width: 1.5em;
 }
+
+#about-title {
+  color: rgb(86, 24, 44);
+}
+
+.social-media li:hover {
+  cursor: pointer;
+  font-size: 2.1em;
+}
+
