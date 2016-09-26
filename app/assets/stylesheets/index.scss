@@ -36,6 +36,10 @@
   font-size: 5em;
 }
 
+#giving-title {
+  color: rgb(202, 55, 52);
+}
+
 .tweet-description {
   text-align: center;
   font-size: 2em;
@@ -53,9 +57,17 @@
   width: 350px;
   margin-right: 15px;
   text-align: center;
-  background-color: rgba(131, 170, 194, 0.6);
+  background-color: rgba(131, 170, 194, 0.5);
   border-color: black;
 
+}
+
+.single-tweet a {
+  color: black;
+}
+
+.single-tweet a:hover {
+  color: rgb(63, 129, 166);
 }
 
 .email-content {
@@ -72,4 +84,59 @@
   background-color: rgba(131, 170, 194, 0.6);
   border-color: rgb(63, 129, 166);
   color: black;
+}
+
+.img-container {
+  // border: 2px solid red;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.single-image {
+  position: relative;
+}
+
+.MFR {
+  padding-left: 0%;
+  width: 400px;
+  margin-top: 4%;
+}
+
+.BG {
+  padding-left: 0%;
+  width: 325px;
+}
+
+.GC {
+  padding-left: 0%;
+  width: 400px;
+  margin-top: 6.5%;
+}
+
+#beygood {
+  margin-left: 4.5%;
+}
+
+#global {
+  margin-left: 6.5%;
+}
+
+.img-text {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+.gc-text {
+  margin-left: 4%;
+}
+
+.mfr-text {
+  margin-left: -2.2%;
+}
+
+.bg-text {
+  margin-left: 2%;
 }

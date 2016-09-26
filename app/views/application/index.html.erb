@@ -58,8 +58,22 @@
     <section id="giving-back" class="container content-section">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">Giving Back</h2>
-          <p>These are the charities Beyonce Works With</p>
+          <h2 id="giving-title" class="section-title">Giving Back</h2>
+          <div class="row img-container">
+            <div class="single-img MFR col-xs-4">
+              <div class="image"><a href="http://musicforrelief.org/" target="_blank"><img id="music" class="img-responsive" src="/assets/MFR.png"></a></div>
+              <p class="img-text mfr-text hidden">providing aid to natural disaster survivors and protecting the environment</p>
+
+            </div>
+            <div class="single-img BG col-xs-4">
+              <div class="image"><a href="http://www.beyonce.com/beygood/" target="_blank"><img id="beygood" class="img-responsive" src="/assets/BG.png"></a></div>
+              <p class="img-text bg-text hidden">raising funds for <br>charities and bringing awareness to current issues</p>
+            </div>
+            <div class="single-img GC col-xs-4">
+              <div class="image"><a href="https://www.globalcitizen.org/en/" target="_blank"><img id="global" class="img-responsive" src="/assets/GC.png"></a></div>
+              <p class="img-text gc-text hidden">a community committed to social change</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -73,7 +87,7 @@
           <div class="tweets-container">
           <% @tweets.each do |tweet| %>
           <div class="single-tweet panel panel-default col-xs-4">
-            <div class="panel-body"><%= "#{tweet.text}"%></div>
+            <a href="<%= tweet[:url] %>" target="_blank" class="panel-body"><%= tweet[:text]%></a>
           </div>
 
           <% end %>
