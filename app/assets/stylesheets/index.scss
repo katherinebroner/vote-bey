@@ -142,3 +142,32 @@
 .bg-text {
   margin-left: 2%;
 }
+
+.about-img {
+  border: 2px solid red;
+  text-align: center;
+}
+
+.about-text {
+  border: 2px solid blue;
+  font-size: 2em;
+  height: 386px;
+}
+
+.about-content {
+  margin-top: 2%;
+}
+
+.social-media {
+  margin: auto;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.social-media ul {
+  display: inline-block;
+}
+
+.social-media li {
+  font-size: 2em;
+}
