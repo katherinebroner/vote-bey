@@ -4,6 +4,8 @@
 
 .navbar {
   background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 6px -6px #999;
+  border: none;
 }
 
 
@@ -140,3 +142,40 @@
 .bg-text {
   margin-left: 2%;
 }
+
+.about-img {
+  text-align: center;
+}
+
+.about-text {
+  font-size: 2em;
+  height: 386px;
+}
+
+.about-content {
+  margin-top: 3%;
+}
+
+.social-media {
+  margin: auto;
+  text-align: center;
+}
+
+.social-media ul {
+  display: inline-block;
+}
+
+.social-media li {
+  font-size: 2em;
+  width: 1.5em;
+}
+
+#about-title {
+  color: rgb(86, 24, 44);
+}
+
+.social-media li:hover {
+  cursor: pointer;
+  font-size: 2.1em;
+}
+
