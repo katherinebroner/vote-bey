@@ -8802,11 +8802,26 @@ button.close {
   }
 }
 /* line 5, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
-.navbar {
-  background: rgba(255, 255, 255, 0.6);
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* line 10, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.navbar {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 6px -6px #999;
+  border: none;
+  transition-duration: 1s;
+}
+
+/* line 17, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.page-scroll {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* line 23, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .intro-content {
   padding-top: 100px;
   height: 825px;
@@ -8816,7 +8831,7 @@ button.close {
   background-attachment: fixed;
 }
 
-/* line 19, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 32, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .intro-text {
   height: 200px;
   text-align: center;
@@ -8824,14 +8839,19 @@ button.close {
   color: white;
 }
 
-/* line 26, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+@media (max-width: 768px) {
+  /* line 40, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .intro-text {
+    margin-top: 28%;
+  }
+}
+/* line 45, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .content-section {
   padding-top: 50px;
-  height: 750px;
-  border: 2px solid black;
+  height: 725px;
 }
 
-/* line 32, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 50, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .section-title {
   color: #3f81a6;
   text-align: center;
@@ -8839,7 +8859,20 @@ button.close {
   font-size: 5em;
 }
 
-/* line 39, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+@media (max-width: 768px) {
+  /* line 58, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .section-title {
+    font-size: 3em;
+    position: relative;
+    top: 15px;
+  }
+}
+/* line 65, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+#giving-title {
+  color: #ca3734;
+}
+
+/* line 69, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .tweet-description {
   text-align: center;
   font-size: 2em;
@@ -8847,78 +8880,275 @@ button.close {
   margin-bottom: 2%;
 }
 
-/* line 46, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 76, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .tweets-container {
   padding-left: 2.5%;
 }
 
-/* line 51, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 80, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .single-tweet {
   height: 100px;
   width: 350px;
   margin-right: 15px;
   text-align: center;
-  background-color: rgba(131, 170, 194, 0.6);
+  background-color: rgba(131, 170, 194, 0.5);
   border-color: black;
 }
 
-/* line 61, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 90, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.single-tweet a {
+  color: black;
+}
+
+/* line 94, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.single-tweet a:hover {
+  color: #3f81a6;
+}
+
+/* line 98, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .email-content {
   text-align: center;
   margin-top: 2%;
   font-size: 2em;
 }
 
-/* line 67, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 104, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .email {
   background-color: #3f81a6;
 }
 
-/* line 71, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 108, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .email:hover {
   background-color: rgba(131, 170, 194, 0.6);
   border-color: #3f81a6;
   color: black;
 }
 
-/* line 77, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+@media (max-width: 768px) {
+  /* line 115, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  #connect {
+    position: relative;
+    margin-top: 65%;
+  }
+
+  /* line 119, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .tweets-container {
+    padding-left: 6%;
+  }
+
+  /* line 122, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .single-tweet {
+    width: 300px;
+  }
+
+  /* line 125, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .email-content {
+    font-size: 1.5em;
+  }
+
+  /* line 128, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .email {
+    margin-bottom: 5%;
+  }
+}
+/* line 133, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .img-container {
   margin: auto;
   margin-top: 4%;
 }
 
-/* line 83, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 138, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.single-image {
+  position: relative;
+}
+
+/* line 142, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .MFR {
   padding-left: 0%;
   width: 400px;
   margin-top: 4%;
 }
 
-/* line 89, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 148, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .BG {
   padding-left: 0%;
   width: 325px;
 }
 
-/* line 94, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 153, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 .GC {
   padding-left: 0%;
   width: 400px;
   margin-top: 6.5%;
 }
 
-/* line 100, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 159, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 #beygood {
-  margin-left: 3.5%;
+  background-image: url(/assets/BG-59fb25d0e79c98703737dd0388ae7e9316a7ab544fc3de6a9c58c7d511ca49f9.png);
+  margin-left: 6%;
+  height: 383px;
+  min-width: 306px;
+  background-repeat: no-repeat;
 }
 
-/* line 104, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+/* line 167, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
 #global {
+  background-image: url(/assets/GC-73610d6c1dffb72d9a0adf0046fe816095f1324a2b358a33b02ea180e6e53327.png);
+  margin-left: 6.5%;
+  height: 225px;
+  min-width: 388px;
+  background-repeat: no-repeat;
+}
+
+/* line 175, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+#music {
+  background-image: url(/assets/MFR-3401fb34c80a15957c0d7ca185ec67a8275a468f82365f91c72cd1d69184dbc6.png);
+  height: 297px;
+  min-width: 396px;
+  background-repeat: no-repeat;
+}
+
+/* line 183, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.img-text {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.2em;
+}
+
+/* line 191, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.gc-text {
   margin-left: 4%;
 }
 
+/* line 195, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.mfr-text {
+  margin-left: -2.2%;
+}
+
+/* line 199, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.bg-text {
+  margin-left: 2%;
+}
+
+@media (max-width: 768px) {
+  /* line 204, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .MFR {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  /* line 208, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .BG {
+    width: 100%;
+  }
+
+  /* line 211, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .GC {
+    width: 100%;
+  }
+
+  /* line 214, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  #music {
+    background-image: url(/assets/MFR-sm-d057c270831df5569724108ea755762dfe07385090585bc2038701c59b361b63.png);
+    height: 235px;
+    background-repeat: no-repeat;
+    margin-left: 5%;
+  }
+
+  /* line 220, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  #global {
+    background-image: url(/assets/GC-sm-c8ec0d654a85a20a9e8d76382e98521aa426840d8741fd4f1b7b381357a2b023.png);
+    height: 177px;
+    min-width: 306px;
+  }
+}
+/* line 229, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.about-img {
+  text-align: center;
+}
+
+/* line 233, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.about-text {
+  font-size: 2em;
+  height: 386px;
+}
+
+/* line 238, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.about-content {
+  margin-top: 3%;
+}
+
+/* line 242, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.social-media {
+  margin: auto;
+  text-align: center;
+}
+
+/* line 247, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.social-media ul {
+  display: inline-block;
+}
+
+/* line 251, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.social-media li {
+  font-size: 2em;
+  width: 1.5em;
+}
+
+/* line 256, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+#about-title {
+  color: #56182c;
+}
+
+/* line 260, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+.social-media li:hover {
+  cursor: pointer;
+  font-size: 2.1em;
+}
+
+@media (max-width: 768px) {
+  /* line 266, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  #about-title {
+    margin-top: 0%;
+  }
+
+  /* line 269, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .about-content {
+    margin-top: 5%;
+  }
+
+  /* line 272, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .about-img {
+    width: 100%;
+  }
+
+  /* line 275, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .about-text {
+    position: relative;
+    top: 15px;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* line 282, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .social-media {
+    height: 25px;
+  }
+
+  /* line 285, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .social-media li {
+    font-size: 1em;
+  }
+
+  /* line 288, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/index.scss */
+  .social-media li:hover {
+    font-size: 1em;
+  }
+}
 /* line 21, /Users/katherinebroner/Desktop/Personal_Projects/vote-bey/app/assets/stylesheets/application.scss */
 body {
-  position: relative;
   font-family: 'David Libre', serif;
 }
