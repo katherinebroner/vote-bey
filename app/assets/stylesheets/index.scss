@@ -157,12 +157,28 @@ html,body {
 }
 
 #beygood {
-  margin-left: 4.5%;
+  background-image:image-url("BG.png");
+  margin-left: 6%;
+  height: 383px;
+  min-width: 306px;
+  background-repeat:no-repeat;
 }
 
 #global {
+  background-image:image-url("GC.png");
   margin-left: 6.5%;
+  height: 225px;
+  min-width: 388px;
+  background-repeat:no-repeat;
 }
+
+#music {
+  background-image:image-url("MFR.png");
+  height: 297px;
+  min-width:396px;
+  background-repeat:no-repeat;
+}
+
 
 .img-text {
   position: absolute;
@@ -196,10 +212,16 @@ html,body {
     width: 100%;
   }
   #music {
-    margin-left: 2%;
+    background-image:image-url("MFR-sm.png");
+    height:235px;
+    background-repeat: no-repeat;
+    margin-left: 5%;
   }
   #global {
-    margin-left: 2.5%;
+    background-image:image-url("GC-sm.png");
+    height:177px;
+    min-width:306px;
+    // margin-left: 2.5%;
   }
 }
 
