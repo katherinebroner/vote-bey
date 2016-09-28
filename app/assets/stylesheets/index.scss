@@ -2,6 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .navbar {
   background: rgba(255, 255, 255, 0.6);
   box-shadow: 0 8px 6px -6px #999;
@@ -13,6 +18,7 @@
   font-weight: bold;
   font-size: 1.5em;
 }
+
 
 .intro-content {
   padding-top: 100px;
@@ -30,10 +36,15 @@
   color: white;
 }
 
+@media (max-width: 768px) {
+  .intro-text {
+    margin-top: 40%;
+  }
+}
+
 .content-section{
   padding-top: 50px;
   height: 725px;
-  // border: 2px solid black;
 }
 
 .section-title {
@@ -42,6 +53,8 @@
   text-decoration: bold;
   font-size: 5em;
 }
+
+
 
 #giving-title {
   color: rgb(202, 55, 52);
