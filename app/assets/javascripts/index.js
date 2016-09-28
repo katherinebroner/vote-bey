@@ -9,6 +9,14 @@ $(function() {
 });
 
 $(document).ready(function(){
+  $(window).scroll(function(){
+    if($(this).scrollTop() > $(".navbar").scrollTop()){
+      $(".navbar").css('background',  'rgb(117, 173, 204)');
+    } else {
+      $(".navbar").css('background', 'rgba(255, 255, 255, 0.6)');
+    }
+  });
+
   $(".single-img").mouseover(function(){
     $(this).children('.image').css('opacity', 0.2);
     $(this).children('p').removeClass("hidden");

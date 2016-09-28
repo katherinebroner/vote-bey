@@ -5,14 +5,14 @@
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           <a class="navbar-brand page-scroll" href="#vote-bey">VoteBey</a>
         </div>
 
-        <div class="navbar-right">
-          <ul class="nav navbar-nav">
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
             <li class="hidden"><a href="#vote-bey"></a></li>
             <li><a class="page-scroll" href="#about">About</a></li>
-            <li><a class="page-scroll" href="#issues">Issues</a></li>
             <li><a class="page-scroll" href="#giving-back">Giving Back</a></li>
             <li><a class="page-scroll" href="#connect">Connect</a></li>
           </ul>
@@ -42,7 +42,7 @@
           <div class="about-content">
             <div class="row">
             <div class="col-xs-6 about-img">
-              <%= image_tag("BeyAbout.png")%>
+              <%= image_tag("BeyAbout.png", class: "img-responsive")%>
             </div>
             <div class="col-xs-6 about-text">
               <p>Beyonce Knowles is running as the Indepedent Party candidate for president.  Born and raised in Houston, Texas, she strongly values family and giving back to the community.  Her dominance in the music industry proves that she is an excellent leader and will lead America in the right direction.</p>
@@ -57,16 +57,6 @@
             </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Issues Section -->
-    <section id="issues" class="container content-section">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="section-title">Issues</h2>
-          <p>These are the main issues Beyonce stands behind</p>
         </div>
       </div>
     </section>
@@ -99,7 +89,7 @@
     <section id="connect" class="container content-section">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="section-title">Connect</h2>
+          <h2 class="section-title connect-title">Connect</h2>
           <p class="tweet-description">@recent_tweets from Beyonce</p>
           <div class="tweets-container">
           <% @tweets.each do |tweet| %>
