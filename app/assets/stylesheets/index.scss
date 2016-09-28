@@ -38,9 +38,9 @@ html,body {
 
 @media (max-width: 768px) {
   .intro-text {
-    margin-top: 40%;
+    margin-top: 28%;
   }
-}
+ }
 
 .content-section{
   padding-top: 50px;
@@ -74,7 +74,6 @@ html,body {
 }
 
 .tweets-container {
-  // border: 2px solid black;
   padding-left: 2.5%;
 }
 
@@ -113,6 +112,10 @@ html,body {
 }
 
 @media (max-width: 768px) {
+  #connect {
+    position: relative;
+    margin-top: 65%;
+  }
   .tweets-container {
     padding-left: 6%;
   }
@@ -238,9 +241,14 @@ html,body {
 }
 
 @media (max-width: 768px) {
+  #about-title {
+    margin-top: 0%;
+  }
+  .about-content {
+    margin-top: 5%;
+  }
   .about-img {
     width: 100%;
-
   }
   .about-text {
     position: relative;
