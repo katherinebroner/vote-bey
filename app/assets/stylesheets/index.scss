@@ -9,6 +9,11 @@
   transition-duration: 1s;
 }
 
+.page-scroll{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 .intro-content {
   padding-top: 100px;
   height: 825px;
@@ -27,8 +32,8 @@
 
 .content-section{
   padding-top: 50px;
-  height: 750px;
-  border: 2px solid black;
+  height: 725px;
+  // border: 2px solid black;
 }
 
 .section-title {
